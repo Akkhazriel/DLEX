@@ -20,3 +20,8 @@ document.querySelector('.nav__dropmenu')
 .addEventListener('click', () => {
     dropMenu.classList.toggle('active');
 })
+
+export const buttons = document.querySelector('.header__buttons');
+burger.addEventListener('click', () => {
+    buttons.classList.toggle('active');
+})
