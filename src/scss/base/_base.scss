@@ -4,13 +4,32 @@ html {
 
 body {
     position: relative;
-
+    font-family: var(--main-font);
+    background-color: #fff;
     a 
     {color: var(--main-color)};
 }
 
 [class*="__container"] {
-    max-width: 1290px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 33px;
+    padding: 0 156px;
+}
+
+.text-category {
+    color: var(--indigo);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 170%;
+}
+
+.text-title {
+    color: var(--black);
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.text-description {
+    color: var(--black-56);
+    font-weight: 400;
 }
