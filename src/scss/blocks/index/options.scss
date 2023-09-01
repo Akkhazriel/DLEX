@@ -1,0 +1,278 @@
+.options {
+    background: #F9F9FB;
+    &__container {
+        padding-top: 96px;
+        padding-bottom: 96px;
+        @media(max-width: 1300px) {
+            max-width: 100%;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 41px;
+        @media(max-width: 1300px) {
+            align-items: center;
+        }
+        @media(max-width: 530px) {
+            row-gap: 22px;
+        }
+    }
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        @media(max-width: 1300px) {
+            text-align: center;
+            align-items: center;
+        }
+        .options__category {
+            font-size: 14px;
+            @media(max-width: 500px) {
+                font-size: 12px;
+                width: 200px;     
+            }
+        }
+        .options__title {
+            font-size: 40px;
+            @media(max-width: 666px) {
+                font-size: 28px;
+            }
+            @media(max-width: 530px) {
+                font-size: 18px;
+            }
+            @media(max-width: 500px) {
+                width: 200px;     
+            }
+        }
+    }
+    &__cl {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 120px;
+        @media(max-width: 1300px) {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 60px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .options-cl__bf {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 32px;
+            .options-cl__text {
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+                @media(max-width: 500px) {
+                }
+                .text-category {
+                    font-size: 20px;
+                    font-weight: 700;
+                    @media(max-width: 530px) {
+                        font-size: 18px;
+                    }
+                    @media(max-width: 500px) {
+                        font-size: 14px;  
+                    }
+                }
+                .text-description {
+                    font-size: 16px;
+                    max-width: 456px;
+                    @media(max-width: 530px) {
+                        font-size: 14px;
+                    }
+                    @media(max-width: 500px) {  
+                        font-size: 12px;
+                    }
+                    span {
+                        color: var(--blue);
+                    }
+                }
+            }
+            .options-cl__img {
+                display: block;
+                background-image: url('./../img/index/options/cl-1.png');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 456px;
+                height: 300px;
+                @media(max-width: 670px) {
+                    width: 356px;
+                    height: 200px;
+                }
+                @media(max-width: 530px) {
+                    width: 300px;
+                    height: 150px;
+                }
+                @media(max-width: 320px) {
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+            .options-cl__list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+                @media(max-width: 1300px) {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+                @media(max-width: 530px) {
+                    text-align: left;
+                    justify-self: start;
+                    align-items: flex-start;       
+                }
+                .options-cl__item {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 180%;
+                    color: var(--black);
+                    position: relative;
+                    padding-left: 32px;
+                    @media(max-width: 530px) {
+                        font-size: 12px;      
+                    }
+                    @media(max-width: 330px) {
+                        font-size: 10px;      
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        top: 0;
+                        left: 0;;
+                        background-image: url('./../img/index/options/Check cr-fr.svg');
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+        .options-cl__ma {
+            display: flex;
+            flex-direction: column;
+            row-gap: 32px;
+            align-items: flex-start;
+            @media(max-width: 530px) {
+                align-items: center;
+            }
+            .options-cl__text {
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+                .text-category {
+                    font-size: 20px;
+                    font-weight: 700;
+                    @media(max-width: 500px) {
+                        font-size: 14px;  
+                    }
+                }
+                .text-description {
+                    font-size: 16px;
+                    max-width: 456px;
+                    @media(max-width: 530px) {
+                        font-size: 14px;
+                    }
+                    @media(max-width: 500px) {  
+                        font-size: 12px;
+                    }
+                    span {
+                        color: var(--blue);
+                    }
+                }
+            }
+            .options-cl__img {
+                background-image: url('./../img/index/options/cl-2.png');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                width: 456px;
+                height: 300px;
+                @media(max-width: 670px) {
+                    width: 356px;
+                    height: 200px;
+                }
+                @media(max-width: 530px) {
+                    width: 300px;
+                    height: 150px;
+                }
+                @media(max-width: 320px) {
+                    width: 250px;
+                    height: 150px;
+                }
+                img {
+                    position: absolute;
+                    bottom: 5%;
+                    right: -23%;
+                    width: 200px;
+                    height: 150px;
+                    @media(max-width: 670px) {
+                        width: 150px;
+                        height: 100px;
+                    }
+                    @media(max-width: 530px) {
+                        width: 100px;
+                        height: 50px;
+                    }
+                    @media(max-width: 500px) {
+                        display: none;
+                    }
+                }
+            }
+            .options-cl__list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+                @media(max-width: 1300px) {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+                @media(max-width: 530px) {
+                    text-align: left;
+                    justify-self: start;
+                    align-items: flex-start;       
+                }
+                .options-cl__item {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 180%;
+                    color: var(--black);
+                    position: relative;
+                    padding-left: 32px;
+                    @media(max-width: 530px) {
+                        font-size: 12px;      
+                    }
+                    @media(max-width: 330px) {
+                        font-size: 10px;      
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        top: 0;
+                        left: 0;;
+                        background-image: url('./../img/index/options/Check cr-fr.svg');
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
