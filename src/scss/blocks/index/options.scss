@@ -6,6 +6,10 @@
         @media(max-width: 1300px) {
             max-width: 100%;
         }
+        @media(max-width: 300px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
     &__wrapper {
         display: flex;
@@ -63,6 +67,9 @@
             flex-direction: column;
             align-items: flex-start;
             row-gap: 32px;
+            @media(max-width: 500px) {
+                align-items: center;
+            }
             .options-cl__text {
                 display: flex;
                 flex-direction: column;
@@ -78,6 +85,7 @@
                     @media(max-width: 500px) {
                         font-size: 14px;  
                     }
+
                 }
                 .text-description {
                     font-size: 16px;
@@ -87,6 +95,9 @@
                     }
                     @media(max-width: 500px) {  
                         font-size: 12px;
+                    }
+                    @media(max-width: 300px) {
+                        font-size: 10px;        
                     }
                     span {
                         color: var(--blue);
@@ -112,6 +123,10 @@
                 @media(max-width: 320px) {
                     width: 250px;
                     height: 200px;
+                }
+                @media(max-width: 300px) {
+                    width: 200px;
+                    height: 150px;
                 }
             }
             .options-cl__list {
@@ -142,7 +157,9 @@
                     @media(max-width: 330px) {
                         font-size: 10px;      
                     }
-
+                    @media(max-width: 300px) {
+                        font-size: 8px;
+                    }
                     &::before {
                         content: '';
                         position: absolute;
@@ -186,6 +203,9 @@
                     @media(max-width: 500px) {  
                         font-size: 12px;
                     }
+                    @media(max-width: 300px) {
+                        font-size: 10px;
+                    }
                     span {
                         color: var(--blue);
                     }
@@ -209,6 +229,10 @@
                 }
                 @media(max-width: 320px) {
                     width: 250px;
+                    height: 150px;
+                }
+                @media(max-width: 300px) {
+                    width: 200px;
                     height: 150px;
                 }
                 img {
@@ -258,7 +282,9 @@
                     @media(max-width: 330px) {
                         font-size: 10px;      
                     }
-
+                    @media(max-width: 300px) {
+                        font-size: 8px;
+                    }
                     &::before {
                         content: '';
                         position: absolute;
