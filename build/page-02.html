@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- JS -->
-    <script defer src="./js/index.bundle.js"></script>
+    <script defer src="./js/page-02.js"></script>
 </head>
 <body>
 
@@ -337,20 +337,5 @@
 </footer>
     </article>
 
-    <script>
-        const triggerELement = document.querySelector('.stats');
-        const logo = document.querySelector('.logo-color');
-
-        function handleScroll () {
-            if (window.scrollY >= triggerELement.offsetTop) {
-                logo.setAttribute("src", "./img/index/header/onDark-logo.svg");
-            } else {
-                logo.setAttribute("src", "./img/page-02/header-02/onDark-logo-purple.svg")
-            }
-        };
-
-
-        const scrolling = window.addEventListener('scroll', handleScroll);
-    </script>
 </body>
 </html>

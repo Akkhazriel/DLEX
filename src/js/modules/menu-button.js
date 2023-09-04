@@ -23,4 +23,3 @@ export const buttons = document.querySelector('.header__buttons');
 burger.addEventListener('click', () => {
     buttons.classList.toggle('active');
 })
-
