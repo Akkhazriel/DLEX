@@ -22,7 +22,7 @@
         <header class="header-02">
     <div class="header-02__container">
         <div class="header-02__row">
-            <a href="./index.html" class="header-02__logo"><img id="header-logo" src="./img/page-02/header-02/onDark-logo-purple.svg" alt="Logo"></a>
+            <a href="./index.html" class="header-02__logo"><img class="logo-color" src="./img/page-02/header-02/onDark-logo-purple.svg" alt="Logo"></a>
             <nav class="nav">
                 <ul class="header-02__list">
                     <li class="header-02__item">    
@@ -207,7 +207,7 @@
         </div>
     </div>
 </section>
-            <section class="stats" id="stats">
+            <section class="stats">
     <div class="stats__container">
         <div class="stats__wrapper">
             <div class="stats__features">
@@ -337,5 +337,20 @@
 </footer>
     </article>
 
+    <script>
+        const triggerELement = document.querySelector('.stats');
+        const logo = document.querySelector('.logo-color');
+
+        function handleScroll () {
+            if (window.scrollY >= triggerELement.offsetTop) {
+                logo.setAttribute("src", "./img/index/header/onDark-logo.svg");
+            } else {
+                logo.setAttribute("src", "./img/page-02/header-02/onDark-logo-purple.svg")
+            }
+        };
+
+
+        const scrolling = window.addEventListener('scroll', handleScroll);
+    </script>
 </body>
 </html>

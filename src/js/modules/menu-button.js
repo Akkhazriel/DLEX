@@ -1,9 +1,6 @@
 const burger = document.querySelector('.nav-menu');
 const menu = document.querySelector('.nav');
 const body = document.body;
-
-alert();
-
 if (burger && menu) {
     const aduptiveMenu = burger.addEventListener('click', () => {
         burger.classList.toggle('active');
