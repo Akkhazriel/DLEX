@@ -2,6 +2,7 @@ const burger = document.querySelector('.nav-menu');
 const menu = document.querySelector('.nav');
 const body = document.body;
 
+alert();
 
 if (burger && menu) {
     const aduptiveMenu = burger.addEventListener('click', () => {
@@ -25,3 +26,4 @@ export const buttons = document.querySelector('.header__buttons');
 burger.addEventListener('click', () => {
     buttons.classList.toggle('active');
 })
+
