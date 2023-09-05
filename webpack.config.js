@@ -3,7 +3,8 @@ const config = {
     mode: 'production',
     // Точки входа, какие файлы будет собирать
     entry: {
-        index: './src/js/index.js'
+        index: './src/js/index.js',
+        page02: './src/js/page-02.js'
         // Another files
     },
     // Точки выхода. В этот плейсхолдер будет попадать имя файла из точки входа

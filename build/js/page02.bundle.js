@@ -1,0 +1,1 @@
+window.addEventListener("scroll",(()=>{const e=document.querySelector(".stats"),o=document.querySelector(".logo-color");window.scrollY>=e.offsetTop?o.setAttribute("src","./img/index/header/onDark-logo.svg"):o.setAttribute("src","./img/page-02/header-02/onDark-logo-purple.svg")}));
