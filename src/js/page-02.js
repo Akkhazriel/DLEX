@@ -1,3 +1,7 @@
+import aduptiveMenu from "./modules/menu-button";
+import { dropMenu } from "./modules/menu-button";
+import { buttons } from "./modules/menu-button";
+
 window.addEventListener('scroll', () => {
     const triggerELement = document.querySelector('.stats');
     const logo = document.querySelector('.logo-color');
