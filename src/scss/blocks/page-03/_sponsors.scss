@@ -1,0 +1,26 @@
+.sponsors {
+    &__container {
+        padding-top: 72px;
+        padding-bottom: 72px;
+        overflow: auto;
+
+        @media(max-width: 1300px) {
+            padding: 72px 10px;
+        }
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 46px;
+    }
+    .text-title {
+        font-size: 24px;
+    }
+    .sponsors__list {
+        display: flex;
+        column-gap: 81px;
+        overflow: auto;
+    }
+}
