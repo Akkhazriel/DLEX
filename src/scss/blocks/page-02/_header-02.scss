@@ -87,6 +87,13 @@
             visibility: visible;
             transform: rotate(0);
         }
+        .nav__dropmenu {
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                transform: rotate(0);
+            }
+        }
         li {
             position: relative;
         }
