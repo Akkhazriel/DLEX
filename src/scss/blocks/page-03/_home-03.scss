@@ -1,0 +1,83 @@
+.home-03 {
+    &__container {
+        padding-top: 64px;
+        @media(max-width: 999px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        z-index: 0;
+    }
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        align-items: center;
+        margin-bottom: 24px;
+        .text-title {
+            font-size: 56px;
+            @media(max-width: 630px) {
+                font-size: 42px;
+            }
+            @media(max-width: 480px) {
+                font-size: 36px;
+            }
+            @media(max-width: 350px) {
+                font-size: 28px;
+            }
+        }
+        .text-description {
+            max-width: 650px;
+            font-size: 20px;
+            @media(max-width: 630px) {
+                font-size: 18px;
+                max-width: 420px;
+            }
+            @media(max-width: 480px) {
+                max-width: 320px;
+                font-size: 16px;
+            }
+        }
+    }
+    &__buttons {
+        display: flex;
+        column-gap: 16px;
+        @media(max-width: 350px) {
+            flex-direction: column;
+            row-gap: 16px;
+        }
+        .home-03__btn {
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .watch {
+            background: var(--indigo);
+            color: #FFF;
+            border: 1px solid transparent;
+        }
+        .register {
+            background: transparent;
+            color: var(--black);
+            border: 1px solid rgba(18, 17, 39, 0.12);
+        }
+    }
+    &__overview {
+        position: absolute; 
+        top: 227px;
+        @media(max-width: 420px) {
+            top: 300px;
+        }
+
+        @media(max-width: 350px) {
+            top: 370px;
+        }
+    }
+}
