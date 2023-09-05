@@ -1,6 +1,7 @@
 .home-03 {
     &__container {
         padding-top: 64px;
+        padding-bottom: 776px;
         @media(max-width: 999px) {
             padding-left: 10px;
             padding-right: 10px;
@@ -62,11 +63,23 @@
             background: var(--indigo);
             color: #FFF;
             border: 1px solid transparent;
+            transition: .3s linear;
+            &:hover {
+                background: transparent;
+                color: var(--black);
+                border: 1px solid rgba(18, 17, 39, 0.12);
+            }
         }
         .register {
             background: transparent;
             color: var(--black);
+            transition: .3s linear;
             border: 1px solid rgba(18, 17, 39, 0.12);
+            &:hover {
+                background: var(--indigo);
+                color: #FFF;
+                border: 1px solid transparent;
+            }
         }
     }
     &__overview {

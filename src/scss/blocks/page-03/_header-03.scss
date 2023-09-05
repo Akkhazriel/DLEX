@@ -1,8 +1,6 @@
 .header-03 {
     position: relative;
     &__container{
-        // padding-top: 36px;
-        // padding-bottom: 36px;
         @media(max-width: 1400px) {
             padding-left: 70px;
             padding-right: 70px;
@@ -124,7 +122,7 @@
             li:hover>.submenu {
                 opacity: 1;
                 visibility: visible;
-                transform: rotate(0);
+                transform: rotate(0) translateX(0);
             }
             li {
                 position: relative;
@@ -142,6 +140,7 @@
                 transition: .3s linear;
                 @media(max-width: 1920px) {
                     left: -200%;
+                    top: 0;
                 }
                 @media(max-width: 1100px) {
                     background: #ffffffc5;
